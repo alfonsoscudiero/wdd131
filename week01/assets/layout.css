@@ -22,6 +22,7 @@ h1 {
     align-items: center;
     grid-column: 3 span;
     background: #000000;
+    width: 100vw;
 }
 .navigation a {
     display: block;
