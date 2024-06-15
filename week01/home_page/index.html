@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfonso's Home Page/title>
+    <title>Alfonso's Home Page</title>
     <link rel="stylesheet" href="./styles/base.css">
-    <script></script>
+    <script src="./scripts/getdate.js" defer></script>
 </head>
 <body>
-    <header class = "container-header">
+
+    <header>
         <div class = "container-header-title">
-            <h1>WDD 131: Dynamic Web Fundamentals - <span class = "designer">Alfonso Scudiero</span></h1>
+            <h1>WDD 131: Dynamic Web Fundamentals - <span>Alfonso Scudiero</span></h1>
         </div>
         <div class = "container-header-navigation-bar">
             <a href="https://www.linkedin.com/in/alfonso-scudiero/" target="_blank">LinkedIn</a>
@@ -20,61 +21,59 @@
         </div>
     </header>
 
-    <main class = "hero-container">
-        <div class = "hero-container-left-card">
-            <div class = "hero-container-left-card-title">
-                <h2>About Me</h2>
-            </div>
-            <div class = "hero-container-left-card-top-content">
-                <div class = "left-card-top-paragraph">
-                    <p>
-                        My name is Alfonso and I go by Fonz. I was born in Venezuela, and live in Lecheria with my family.
-                        I am currently working as Warehouse Manager at a manufacturing company. I love spending time with my wife enjoying nature.
-                        We love to learn new things and serve.
-                    </p>
+    <main>
+        <div class = "hero-container">
+            <div class = "left-card">
+                <div class = "about-me">
+                    <h2>About Me</h2>
                 </div>
-                <img src="" alt="Alfonso's picture"/>
+                <div class = "about-content">
+                    <p>
+                        My name is Alfonso and I go by Fonz. I was born in Venezuela, and used to live in Lecheria with my family.
+                        I am currently working as Warehouse Manager at a manufacturing company in American Fork, Utah. 
+                        I got an Associate degree at Ensign College where I met my wonderful wife.
+                        I love spending time with my wife enjoying nature.
+                        We also love learning new things and serving others.
+                    </p>
+                    <img src="./images/Alfonso_250x239.jpg" alt="Alfonso's picture"/>
+                </div>
+                <div class = "location">
+                    <h3>Lecheria, Venezuela</h3>
+                    <hr class = "brake-line"/>
+                    <div class = "location-content">
+                        <img src="./images/Venezuela Flag_250x166.png" alt="Venezuela's flag">
+                        <p>
+                            Venezuela is a South American country with diverse terrain, including the Andes Mountains, Maracaibo Lowlands, Guiana Highlands, and plains. 
+                            The climate ranges from tropical to temperate, depending on elevation. 
+                            Venezuela also has many natural attractions, including tropical resort islands, Angel Falls, and Sierra Nevada National Park.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class = "">
-                <h2>Lecheria, Venezuela</h2>
+            <div class = "right-card">
+                <div class = "web-dev-resources">
+                    <h2>Web Dev Resources</h2>
+                </div>
+                <div class = "list-resources">
+                    <ul>
+                        <li><a href="https://w3schools.com">W3 Schools</a></li>
+                        <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+                        <li><a href="https://dev.to/">DEV Community</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                        <li><a href="https://try.stackoverflow.co/">Stack Overflow</a></li>
+                        <li><a href="https://udemy.com">Udemy</a></li>
+                        <li><a href="https://validator.w3.org/">Markup Validation Service</a></li>
+                    </ul>
+                </div>
             </div>
-            <hr class = "brake-line"/>
-            <div class = "left-card-bottom-paragraph">
-                <p>
-                    Venezuela is a South American country with diverse terrain, including the Andes Mountains, Maracaibo Lowlands, Guiana Highlands, and plains. 
-                    The climate ranges from tropical to temperate, depending on elevation. 
-                    Venezuela also has many natural attractions, including tropical resort islands, Angel Falls, and Sierra Nevada National Park.
-                </p>
-                <img src="" alt="Venezuela's flag">
-            </div>
-            
-
         </div>
-        <div class = " hero-container-right-card">
-            <div class = "hero-container-right-card-title">
-                <h2>Web Dev Resources</h2>
-            </div>
-            <div class = "hero-container-right-card-list">
-                <ul id="web-dev-resources">
-                    <li>W3 Schools</li>
-                    <li>CSS-Tricks</li>
-                    <li>DEV Community/li>
-                    <li>MDN Web Docs</li>
-                    <li>Stack Overflow</li>
-                    <li>GitHub</li>
-                </ul>
-
-            </div>
-
-        </div>
-
     </main>
 
-    <footer class = container-footer>
-        <h2>&copy;<span id="currentYear"></span>| Designed by <span class = "designer">Alfonso Scudiero</span></h2>
-        <p>Last Modification: </p>
+    <footer>
+        <p>&copy; <span class="year" id="year"> </span> Designed by: Alfonso Scudiero, Venezuela</p>
+        <p class="last-modified" id="lastModified"></p>
     </footer>
-    
+
 </body>
 </html>
