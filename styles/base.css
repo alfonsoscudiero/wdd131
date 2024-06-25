@@ -56,7 +56,7 @@ header a {
 main {
     display: grid;
     grid-row: 2/3;
-    max-width: 1980px; /* 1200px is popular choice for many websites */
+    max-width: 1440px; /* 1200px is popular choice for many websites */
     margin: 0 auto; /* Center the main element horizontally */
     padding: 1rem;
 }
