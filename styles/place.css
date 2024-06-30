@@ -42,6 +42,10 @@ header {
     border-bottom: 0.2rem solid #FF0000;
 }
 
+.main-container {
+    padding-bottom: 2rem;
+}
+
 .image-container img {
     width: 100%;
     height: auto;
@@ -108,5 +112,4 @@ footer {
     padding-top: 0.9rem;
     padding: 1rem;
     border-top: 0.4em solid #FFD700;
-    margin-top: 3rem;
 }
