@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venezuela</title>
+    <meta name="description" content="The subject of the page is about a country or place where I used to live.">
+    <meta name="author" content="Alfonso Scudiero">
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rock+Salt&display=swap" rel="stylesheet"> 
+    <!-- CSS two files: main and large -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <!-- Deferred script loading -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Venezuela</h1>
+        </header>
+
+        <main class="main-container">
+            <div class="image-container">
+                <picture>
+                    <source media="(min-width: 40em)" srcset="images/hero-large-1.webp" >
+                    <img src="images/hero-small-1.webp" alt="Cayo Sombrero, Parque Nacional Morrocoy" width="640" height="854">
+                </picture>
+            </div>
+            <div class="data-section">
+                <h2>Data</h2>
+                <div class="data-table">
+                    <span class="data-title">Area:</span>
+                    <span class="data-value"> 912,050 sq km</span>
+                    <span class="data-title">Population:</span>
+                    <span class="data-value"> 29,395,334</span>
+                    <span class="data-title">Capital:</span>
+                    <span class="data-value"> Caracas</span>
+                    <span class="data-title">Language:</span>
+                    <span class="data-value"> Spanish</span>
+                    <span class="data-title">Currency:</span>
+                    <span class="data-value"> Bolivar (Bs.)</span>
+                    <span class="data-title">Time Zone:</span>
+                    <span class="data-value"> UTC -4</span>
+                    <span class="data-title">Calling Code:</span>
+                    <span class="data-value"> +58</span>
+                    <span class="data-title">Internet TLD:</span>
+                    <span class="data-value"> .ve</span>
+                </div>
+            </div>
+
+            <hr id="brake-line">
+
+            <div class="weather-section">
+                <h2>Weather</h2>
+                <div class="data-table">
+                    <span class="data-title">Temperature:</span>
+                    <span class="data-value"> 32 °C</span>
+                    <span class="data-title">Conditions:</span>
+                    <span class="data-value"> Partly Cloudy</span>
+                    <span class="data-title">Wind:</span>
+                    <span class="data-value"> 5 km/h</span>
+                    <span class="data-title">Wind Chill:</span>
+                    <span class="data-value" id="windchill"></span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span class="year" id="year"> </span> Designed by: Alfonso Scudiero, Venezuela</p>
+            <p class="last-modified" id="lastModified"></p>
+        </footer>
+    </div>
+    
+</body>
+</html>

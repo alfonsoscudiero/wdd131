@@ -1,0 +1,57 @@
+/* Media Query for wider than mobile view ports.*/
+@media (min-width: 40em) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    .image-container {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+
+    .data-section {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .weather-section {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .data-section,
+    .weather-section {
+        background: rgba(0, 0, 0, 0.5); /* Adding background for contrast */
+        color: #fff;
+        padding: 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .data-section h2, .weather-section h2 {
+        background-color: #022C43;
+        color: white;
+        padding: 0.5rem;
+        text-align: left;
+        margin: -1rem 2rem 1.5rem -1.5rem;
+    }
+
+
+    .data-table {
+        padding: 1rem;
+    }
+
+    .weather-section h2::after {
+        content: url('../images/weather_icon_large.png'); /* Replace with your large icon URL */
+        float: right;
+        width: 3rem; /* Adjust size as needed */
+        height: auto;
+        padding-left: 2rem;
+    }
+}
