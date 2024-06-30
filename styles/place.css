@@ -39,7 +39,7 @@ header {
     background-color: #055674;
     text-align: center;
     padding: 1rem;
-    border-bottom: 0.2rem solid #0081c9;
+    border-bottom: 0.2rem solid #FF0000;
 }
 
 .image-container img {
@@ -108,6 +108,5 @@ footer {
     padding-top: 0.9rem;
     padding: 1rem;
     border-top: 0.4em solid #FFD700;
-    /* height: 10%; */
+    margin-top: 3rem;
 }
-
