@@ -22,7 +22,7 @@ h1 {
     font-family: "Rock Salt", cursive;
     font-weight: 900;
     font-style: normal;
-    color: #FFC93C;
+    color: #Fff;
     letter-spacing: .4rem;
     text-shadow: 0.2rem 0.2rem #000;
 }
@@ -36,10 +36,10 @@ h1 {
 }
 
 header {
-    background-color: #0081C9;
+    background-color: #055674;
     text-align: center;
     padding: 1rem;
-    border-bottom: 0.2rem solid #055674;
+    border-bottom: 0.2rem solid #0081c9;
 }
 
 .image-container img {
