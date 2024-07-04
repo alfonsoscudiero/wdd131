@@ -23,7 +23,7 @@
     }
 
     .container-main {
-        max-width: 1200px;
+        max-width: 1440px;
         flex: 1 1 100%;
     }
     
@@ -31,8 +31,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
-        gap: 2rem;
+        gap: 1rem;
         justify-items: center;
         flex: 1 1 100%;
+    }
+
+    footer p {
+        color: #fff;
     }
 }
