@@ -87,10 +87,9 @@ header {
     position: relative;
 }
 
-.weather-section h2::after {
+.weather-section img {
     display: block;
-    content: url(../images/weather-icon.svg);
-    margin: 0 auto 0;
+    margin: 0 auto;
     width: var(--weather-icon-width);
     height: auto;
 }

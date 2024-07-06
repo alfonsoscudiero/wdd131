@@ -56,8 +56,7 @@
         padding: 0.5rem;
     }
 
-    .weather-section h2::after {
-        content: url('../images/weather-icon.svg'); /* Replace with your large icon URL */
+    .weather-section img {
         display: inline-block;
         width: var(--weather-icon-width); /* Adjust size as needed */
         height: auto;
