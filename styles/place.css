@@ -94,6 +94,13 @@ header {
     height: auto;
 }
 
+.weather-section h2::after {
+    display: block;
+    margin: 0 auto 0;
+    width: var(--weather-icon-width);
+    height: auto;
+}
+
 footer {
     display: grid;
     grid-row: 3/4;
