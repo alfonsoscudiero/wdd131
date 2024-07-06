@@ -153,14 +153,14 @@ newTemplesLink.addEventListener("click", () => {
 })
 
 smallTemplesLink.addEventListener("click", () => {
-    let smallTemples = temples.filter(temple => temple.area < 10000);
-    createTempleCard(smallTemples);
-})
+  const smallTemples = temples.filter(temple => temple.area < 10000);
+  createTempleCard(smallTemples);
+});
 
 largeTemplesLink.addEventListener("click", () => {
-    let largeTemples = temples.filter(temple => temple.area > 90000);
-    createTempleCard(largeTemples);
-})
+  const largeTemples = temples.filter(temple => temple.area > 90000);
+  createTempleCard(largeTemples);
+});
 
 // Event listener for Home button to show all temples
 homeLink.addEventListener("click", () => {
