@@ -15,7 +15,6 @@
 
 body {
     font-family: var(--paragraph-font);
-    font-size: 2rem;
     max-width: 90rem;
     padding: 2rem auto;
 }
@@ -37,9 +36,9 @@ main {
 
 
 main p {
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
     font-weight: 500;
-    min-height: 20rem;
+    min-height: 20em;
 }
 
   /* footer style */
@@ -48,11 +47,11 @@ main p {
     color: var(--accent2-color);
     text-align: center;
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 } 
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--accent2-color);
     padding: 0.1rem;
 }
