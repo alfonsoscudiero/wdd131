@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form page using good form design given specific field requirements and submission confirmation with a counter">
+    <meta name="author" content="Alfonso Scudiero">
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&family=Righteous&display=swap" rel="stylesheet">    <!-- CSS two files: main and large -->
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- Deferred script loading -->
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+<!-- HEADER HERE -->
+    <header>
+        <h1>Product Review</h1>
+    </header>
+<!-- CONTENT HERE --> 
+    <main>
+        <!-- Form | Reference a form submission confirmation page named "review.html"-->
+        <form method="get" action="review.html" class="wf1">
+            
+            <!-- Product Name -->
+            <fieldset>
+                <label for="product-name">Product Name</label>
+                <select name="productName" id="product-name" required>
+                    <option value="" disabled selected>Choose a Product... </option>
+                    <!-- disabled: Prevents the option from being selected.  -->
+                    <!-- selected: Ensures the option is displayed by default -->
+                </select>
+            </fieldset>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <label>Overall Rating</label>
+                <div class="star-rating">
+                    <input type="radio" name="rating" id="five-star" value="5" required/><label for="five-star"></label>
+                    <input type="radio" name="rating" id="four-star" value="4" required/><label for="four-star"></label>
+                    <input type="radio" name="rating" id="three-star" value="3" required/><label for="three-star"></label>
+                    <input type="radio" name="rating" id="two-star" value="2" required/><label for="two-star"></label>
+                    <input type="radio" name="rating" id="one-star" value="1" required/><label for="one-star"></label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <fieldset>
+                <label for="complete-date">Date of Installation</label>
+                <input type="date" name="completeDate" id="complete-date" required>
+            </fieldset>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <div class="review">
+                    <p>Which features did you find useful in the product?<br><span id="cursive">(Check all that apply)</span></p>
+                </div>
+                <div class="checkbox-container">
+                    <label><input type="checkbox" name="endurance" value="yes" id="endurance">Durability</label>
+                    <label><input type="checkbox" name="straightforward" value="yes" id="straightforward">Ease of Use</label>
+                    <label><input type="checkbox" name="implementation" value="yes" id="implementation">Performance</label>
+                    <label><input type="checkbox" name="blueprint" value="yes" id="blueprint">Design</label>
+                </div>
+            </fieldset>
+
+            <!-- Written Review -->
+            <fieldset>
+                <label for="product-review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea name="productReview" id="product-review" rows="8" cols="50"></textarea>
+            </fieldset>
+
+            <!-- User Name -->
+            <fieldset>
+                <label for="user-name">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" name="userName" id="user-name">
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+<!-- FOOTER HERE -->
+    <footer>
+        <p>&copy; <span class="year" id="year"> </span> Designed by: Alfonso Scudiero, Venezuela</p>
+        <p class="last-modified" id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

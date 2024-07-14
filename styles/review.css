@@ -1,0 +1,58 @@
+:root {
+    --heading-font: "Righteous", sans-serif;;
+    --paragraph-font: "Karla", sans-serif;;
+    --primary-color: #2D032B;
+    --secondary-color: #00087C;
+    --accent1-color: #D5CDD5;
+    --accent2-color: #F2f2f2;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+    max-width: 90rem;
+    padding: 2rem auto;
+}
+
+header {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding: 2rem;
+}
+
+main {
+    background-color: var(--accent1-color);
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+
+main p {
+    padding: 10rem 2rem;
+    font-weight: 500;
+    min-height: 20rem;
+}
+
+  /* footer style */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+} 
+
+footer p {
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+    padding: 0.1rem;
+}
