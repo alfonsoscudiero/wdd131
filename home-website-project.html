@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Website Project</title>
+    <meta name="description" content="The final website project is a comprehensive assessment of the course learning outcomes giving you an opportunity to demonstrate your mastery of the course learning outcomes in HTML, CSS, and JS.">
+    <meta name="author" content="Alfonso Scudiero">
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/web-project.css">
+    <!-- Deferred script loading -->
+    <script src="scripts/web-project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>INKSPIRING HUB</h1>
+        <a href="#" id="menu"></a>`
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="home" id="active">HOME</a></li>
+                <li><a href="#" class="shop">SHOP</a></li>
+                <li><a href="#" class="contactUs">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="hero-container">
+            <div id="hero-image">
+                <picture>
+                    <source srcset="" media="(min-width: 30em)">
+                    <img src="images/wood-tools.webp" alt="Wood tolls on a table" width="480" height="320">
+                </picture>
+            </div>
+            <section id="hero-message">
+                <p>Discover elegant writing tools that embody traditional craftsmanship</p>
+                <div id="hero-button">
+                    <a href="cta" href="">SHOPPING</a>
+                </div>
+            </section>
+        </div>
+
+        <h2>Handcrafted Instruments</h2>
+        <div class="slides-container">
+            <div class="my-slides">
+                <div class="number-text">1 / 4</div>
+                <img src="images/bolt-action.webp" alt="">
+                <div class="text">Bolt Action Pen</div>
+            </div>
+    
+            <div class="my-slides">
+                <div class="number-text">2 / 4</div>
+                <img src="images/gatsby-gold.webp" alt="">
+                <div class="text">Gatsby Pen</div>
+            </div>
+    
+            <div class="my-slides">
+                <div class="number-text">3 / 4</div>
+                <img src="images/european.webp" alt="">
+                <div class="text">European Pen</div>
+            </div>
+    
+            <div class="my-slides">
+                <div class="number-text">4 / 4</div>
+                <img src="images/mini-bolt-action-keychain.webp" alt="">
+                <div class="text">Mini Bolt Action Keychain</div>
+            </div>
+
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container-left">
+                <p><a href="">SHOPPING</a></p>
+                <p><a href="">CONTACT US</a></p>
+            </div>
+            <div class="footer-container-right">
+                <h4>LET'S CONNECT</h4>
+                <div class="container-social-media">
+                    <a href=""><img src="images/Icon-Instagram-400x400.svg" alt="Instagram Icon" title="Instagram"></a>
+                    <a href=""><img src="images/Icon-Etsy-400x400.svg" alt="Etsy Icon" title="Etsy"></a>
+                    <a href=""><img src="images/Icon-Pinterest-400x400.svg" alt="Pinterest Icon" title="Pinterest"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container-bottom">
+            <div class="bottom-left">
+                <p id="copyright">&copy; <span class="year" id="year"> </span> Designed by: A. Scudiero</p>
+            </div>
+            <div class="bottom-right">
+                <p class="last-modified" id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
