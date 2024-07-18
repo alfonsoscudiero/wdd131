@@ -180,3 +180,8 @@ footer p {
     color: var(--accent2-color);
     padding: 0.1rem;
 }
+
+.review-counter {
+    text-align: end;
+    padding: .5rem;
+}

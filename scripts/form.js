@@ -12,12 +12,12 @@ const products = [
     {
         id: "fc-1888",
         name: "Flux capacitor",
-        average_rating: 4.5,
+        average_rating: 4.5
     },
     {
         id: "fc-2050",
         name: "Power laces",
-        average_rating: 4.7,
+        average_rating: 4.7
     },
     {
         id: "fs-1987",
@@ -50,4 +50,17 @@ products.forEach(product => {
     // Append Elements: Append the newly created elements to the target element
     productSelect.appendChild(option);
 });
+
+// Check if there is a review counter in localStorage
+let reviewCount = localStorage.getItem('reviewCount') ? parseInt(localStorage.getItem('reviewCount')) : 0;
+
+// Increment the review count
+reviewCount += 1;
+
+// Store the updated count back in localStorage
+localStorage.setItem('reviewCount', reviewCount);
+
+// Optionally, display the count on the page
+document.getElementById("review-counter").innerHTML = `# Reviews submitted: ${reviewCount}`;
+
 
