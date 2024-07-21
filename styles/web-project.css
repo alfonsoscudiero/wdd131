@@ -55,7 +55,7 @@ header h1 {
     font-weight: 400;
     font-style: normal;
     text-align: right;
-    margin-top: 1.2rem;
+    margin-top: .8rem;
     flex: 1;
 }
 
@@ -112,7 +112,7 @@ nav a:hover {
     padding: .5rem .75rem;
     color: var(--accent2-color);
     position: absolute;
-    top: 1rem;
+    top: .5rem;
     left: 1rem;
 }
 
@@ -220,6 +220,15 @@ nav a:hover {
 .content:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translate(0px, -8px);
+}
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.lazy.loaded {
+    opacity: 1;
 }
 
 .content img {
@@ -451,7 +460,6 @@ footer a:hover, footer a:focus {
     background-color: #fff;
     width: 80%;
     max-width: 30rem;
-    margin-top: .5rem 0;
 }
 
 .wf1 textarea {
