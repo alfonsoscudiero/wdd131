@@ -1,0 +1,139 @@
+/* Media Query for wider than mobile viewports.*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-image img {
+        width: 100%;
+        max-height: 17rem;
+        object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    }
+    
+    .content,
+    .my-cards {
+        width: 45%;
+    }
+}
+/* styles for screen between 481px and 768px  */
+@media screen and (min-width: 769px) {
+    body {
+        max-width: var(--max-large-width)
+    };
+
+    header {
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        order: 2;
+        text-align: right;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        order: 1;
+        flex: 1;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1;
+        font-size: 1rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-height: 25rem;
+        object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    }
+
+    #hero-message {
+        line-height: 2rem;
+    }
+
+    #hero-message p {
+        font-size: 1rem;
+    }
+
+    #hero-button {
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        padding: .5rem 0;
+    }
+
+    #hero-button a {
+        font-size: .8rem;
+    }
+
+    .main-container {
+        flex: 1 1 100%;
+    }
+
+    .content-container {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .content-container h2{
+        margin-bottom: 2rem;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        place-items: center;
+        column-gap: 1rem;
+    }
+
+    .content,
+    .my-cards {
+        width: 30%;
+    }
+
+    .footer-container-left a {
+        font-size: 1.2rem;
+    }
+
+    .container-social-media img{
+        width: 30px;
+    }
+
+    .footer-container h4 {
+        font-size: 0.8rem;
+    }
+
+    .footer-container-bottom p {
+        font-size: 0.8rem;
+    }
+
+    .wf1 {
+        width: 60%;
+    }
+
+    #intro-message {
+        font-size: 1rem;
+    }
+
+    .wf1 label {
+        font-size: 1rem;
+    }
+
+    .wf1 input[type="text"],
+    .wf1 input[type="email"],
+    .wf1 textarea {
+        max-width: 50rem;
+    }
+
+    .wf1 input[type="submit"]{
+        font-size: .8rem;
+    }
+}
